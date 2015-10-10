@@ -14,22 +14,22 @@ function lottery() {
       error.html("Cannot choose from an empty set.");
       return;
     }
-    var inlist = raw.split(/\r?\n/);
+    var ins = raw.split(/\r?\n/);
 
-    var n = inlist.length;
+    var n = ins.length;
     if (n < k) {
       error.html("Cannot choose "+k+" from "+n+".");
       return;
     }
 
     // m choose n; no duplicates.
-    var outlist=[]
+    var outs=[]
     for (var i=0; i<k; ++i) {
-      var choice = Math.floor(Math.random()*inlist.length);
-      outlist.push(inlist[choice]);
-      inlist.splice(choice, 1);
+      var choice = Math.floor(Math.random()*ins.length);
+      outs.push(ins[choice]);
+      ins.splice(choice, 1);
     }
-    outel.val(outlist.join('\n'));
+    outel.val(outs.join('\n'));
   });
 }
 
