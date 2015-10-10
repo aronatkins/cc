@@ -22,7 +22,7 @@ function lottery() {
       return;
     }
 
-    // m choose n; no duplicates.
+    // n choose k; no duplicates.
     var outs=[]
     for (var i=0; i<k; ++i) {
       var choice = Math.floor(Math.random()*ins.length);
