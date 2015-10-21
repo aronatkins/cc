@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+    margin: 50px;
+}
+
+dt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+dd {
+    margin-bottom: 1em;
+}
