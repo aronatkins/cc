@@ -3,11 +3,15 @@ function lottery() {
     event.preventDefault();
 
     var error = $('#error');
-    error.html('');             // clear previous mistakes
 
     var inel = $("textarea[name='in']");
     var outel = $("textarea[name='out']");
+    var losersel = $("textarea[name='losers']");
     var k = $("input[name='k']").val();
+
+    error.html('');             // clear previous mistakes
+    outel.val('');              // clear previous output
+    losersel.val('');
 
     var raw = inel.val().trim();
     if (raw === "") {
@@ -30,6 +34,9 @@ function lottery() {
       ins.splice(choice, 1);
     }
     outel.val(outs.join('\n'));
+
+    // items left over are losers and were not picked.
+    losersel.val(ins.join('\n'));
   });
 }
 
