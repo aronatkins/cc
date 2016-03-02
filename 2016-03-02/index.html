@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Stratton Coding Club: 2015-11-18 (3-5)</title>
+    <title>Stratton Coding Club</title>
 
     <meta name="description"
-          content="Stratton Elementary School Coding Club: 2016-01-27 intro too">
+          content="Stratton Coding Club 2016-03-02">
     <meta name="author" content="Aron Atkins">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -15,7 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="../reveal.js-3.1.0/css/reveal.css">
-    <link rel="stylesheet" href="../reveal.js-3.1.0/css/theme/blood.css" id="theme">
+    <!-- sky -->
+    <link rel="stylesheet" href="../reveal.js-3.1.0/css/theme/serif.css" id="theme">
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="../reveal.js-3.1.0/lib/css/zenburn.css">
@@ -28,13 +29,12 @@
       link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js-3.1.0/css/print/pdf.css' : '../reveal.js-3.1.0/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
-
+    
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
-
   </head>
   <body>
     <div class="reveal">
@@ -42,63 +42,52 @@
 	<section>
 	  <h3>Stratton School</h3>
 	  <h1>Coding Club</h1>
-          <h3>Jan. 27, 2016</h3>
+          <h4>02 March 2016</h4>
 	</section>
 
-        <section data-background="vader.jpg">
-          <div >
-            <h2 style="color: rgb(75, 213, 238);">a long time ago in a galaxy far, far away...</h2>
-          </div>
+        <section>
+          <h1>last week ...</h1>
         </section>
-
-        <section data-background="storm-keys.jpg">
-          <h1 style="color: rgb(252,223,43);">we wrote code</h1>
+        <section>
+          <h1>play lab</h1>
+          <h2>tell a story</h2>
         </section>
-
-        <section data-background="fun.jpg">
-          <h1>What was fun?</h1>
-        </section>
-
-        <section data-background="bean.jpg">
-          <h1>What was tricky?</h1>
-        </section>
-
-        <section data-background="home.jpg">
-          <h1>Who used it at home?</h1>
-        </section>
-
-        <section data-background="bb8.jpg" data-background-size="contain">
-          <h1 style="color: blue;">BWEEEEP!</h1>
+        <section data-background="happy-toast.jpg">
+          <h1 style="font-weight:bold;">food fights!</h1>
         </section>
 
         <section>
-          <h2 style="color:rgb(252,223,43);">events</h2>
-          <h3>when this ... then that!</h3>
-        </section>
-        <section>
-            <img src="directions.png" style="width:80vw;">
-        </section>
-        <section>
-            <img src="points.png" style="width:80vw;">
+          <h1>loops</h1>
+          <h2>do it over</h2>
+          <h2 class="fragment" data-autoslide="1000">and over ...</h2>
+          <h2 class="fragment" data-autoslide="1000">and over ...</h2>
+          <h2 class="fragment" data-autoslide="1000">and over ...</h2>
+          <h2 class="fragment">and over ...</h2>
         </section>
 
         <section>
-          <h2>Grades K-2</h2>
+          <img src="long.png"/>
+        </section>
+        <section>
+          <img src="loop.png"/>
+        </section>
+        <section>
+          <img src="zigzag.png"/>
+        </section>
+        <section>
+          <img src="zigzag-line.png"/>
+        </section>
+
+        <section>
+          <h1>get loopy!</h1>
+          <h2>Stages 13 &amp; 14</h2>
+
           <a href="https://studio.code.org/sections/YTYWHC"><h3 style="text-transform: none">studio.code.org/sections/YTYWHC</h3></a>
-          <h2>&nbsp;</h2>
-          <h2>Grades 3-5</h2>
-          <a href="https://studio.code.org/sections/VJWMRC"><h3 style="text-transform: none">studio.code.org/sections/VJWMRC</h3></a>
-        </section>
 
-        
-        
-        <section>
-          <a href="https://hourofcode.com/star"><h2 style="text-transform: none">hourofcode.com/star</h2></a>
-          <img src="sw-blocks.png"/>
         </section>
+        
       </div>
     </div>
-
     <script src="../reveal.js-3.1.0/lib/js/head.min.js"></script>
     <script src="../reveal.js-3.1.0/js/reveal.js"></script>
 
@@ -115,6 +104,8 @@
         // Optional reveal.js plugins
         dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js-3.1.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../reveal.js-3.1.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '../reveal.js-3.1.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: '../reveal.js-3.1.0/plugin/zoom-js/zoom.js', async: true },
           { src: '../reveal.js-3.1.0/plugin/notes/notes.js', async: true }
