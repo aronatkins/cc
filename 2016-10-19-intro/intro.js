@@ -36,10 +36,13 @@ function brokeit($this) {
   var counter = 0;
   function spinOneDegree() {
     if (counter != 360) {
-      counter += 2;
-      var p = 1.0 + (counter < 180 ? counter : 360 - counter) / 90.0;
-      rotateresize($this, (counter*7) % 360, p);
-      setTimeout(spinOneDegree, 10);
+      counter += 4;
+      var d = Math.random() > 0.5 ? counter*7 : counter * -3 % 360 ;
+      var p = 1.0 + Math.random();
+      rotateresize($this, d, p);
+      setTimeout(spinOneDegree, 100);
+    } else {
+      rotateresize($this, 180, 1.0);
     }
   }
   spinOneDegree();
