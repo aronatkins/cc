@@ -78,6 +78,7 @@ var all_students = [
     "Michael",
     "Nate",
     "Natsuki",
+    "Oneth",
     "Sophia",
     "Sylvia",
     "Taiki",
