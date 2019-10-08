@@ -1,3 +1,1 @@
-this is a repo for some presentations to the stratton school coding club.
-
-[intro](intro)
+presentations to the stratton school [coding club](https://aronatkins.github.io/cc/).
