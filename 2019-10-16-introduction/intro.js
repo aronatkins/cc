@@ -121,7 +121,7 @@ function roll_names() {
     );
 }
 
-$('#names').click(roll_names);
+$('.names').click(roll_names);
 
 var seen = '#ffffff';
 var hidden = '#444444';
